@@ -22,13 +22,13 @@ public class Personagem {
             if (this.vida < 0) {
                 this.vida = 0; 
             }
-            System.out.println("\n💥 " + nome + " recebeu " + dano + " de dano!");
+            System.out.println("\n " + nome + " recebeu " + dano + " de dano!");
         }
     }
 
     public void descansar() {
         if (getStatus().equals("Derrotado")) {
-            System.out.println("\n❌ Erro: Um personagem derrotado não pode descansar!");
+            System.out.println("\n Erro: Um personagem derrotado não pode descansar!");
             return;
         }
         
@@ -42,16 +42,16 @@ public class Personagem {
 
     public void atacar() {
         if (getStatus().equals("Derrotado")) {
-            System.out.println("\n❌ Erro: Um personagem derrotado não pode atacar!");
+            System.out.println("\n Erro: Um personagem derrotado não pode atacar!");
             return;
         }
 
         int custoAtaque = 30; 
         if (this.energia >= custoAtaque) {
             this.energia -= custoAtaque;
-            System.out.println("\n⚔️ " + nome + " desferiu um golpe!");
+            System.out.println("\n " + nome + " desferiu um golpe!");
         } else {
-            System.out.println("\n❌ Erro: Energia insuficiente para atacar! (Requer: " + custoAtaque + ")");
+            System.out.println("\n Erro: Energia insuficiente para atacar! (Requer: " + custoAtaque + ")");
         }
     }
 
