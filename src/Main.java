@@ -47,7 +47,7 @@ public class Main {
                     continuar = false;
                     break;
                 default:
-                    System.out.println("\n❌ Opção inválida! Escolha um número de 1 a 4.");
+                    System.out.println("\n Opção inválida! Escolha um número de 1 a 4.");
             }
         }
         teclado.close();
